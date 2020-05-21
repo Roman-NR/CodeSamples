@@ -97,5 +97,8 @@
     <Content Include="T-SQL\func_IsFileMapped.sql" />
     <Content Include="Workflow\Readme.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
