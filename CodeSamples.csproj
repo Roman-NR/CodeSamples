@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EEDBCCCF-4C93-4838-8A5C-6B4B3B46F90F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CodeSamples</RootNamespace>
+    <AssemblyName>CodeSamples</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Database\SampleRepository.cs" />
+    <Compile Include="Database\Model\ConnectionSession.cs" />
+    <Compile Include="Database\Model\DatabaseConnection.cs" />
+    <Compile Include="Database\Model\DatabaseException.cs" />
+    <Compile Include="Database\Model\Extensions.cs" />
+    <Compile Include="Database\Model\Queries\InQueryTerm.cs" />
+    <Compile Include="Database\Model\Queries\InSelectTerm.cs" />
+    <Compile Include="Database\Model\Queries\InTerm.cs" />
+    <Compile Include="Database\Model\Queries\Join.cs" />
+    <Compile Include="Database\Model\Queries\Query.cs" />
+    <Compile Include="Database\Model\Queries\SelectQuery.cs" />
+    <Compile Include="Database\Model\Queries\SimpleTerm.cs" />
+    <Compile Include="Database\Model\Queries\TemporaryTable.cs" />
+    <Compile Include="Database\Model\Queries\Term.cs" />
+    <Compile Include="Database\Model\Queries\TermCollection.cs" />
+    <Compile Include="Database\Model\Queries\UnionQuery.cs" />
+    <Compile Include="Database\Model\QueryProfiler.cs" />
+    <Compile Include="Database\Model\Transaction.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaskExecutor\TaskExecutor.cs" />
+    <Compile Include="Workflow\Model\Configuration\EntityWorkflowConfiguration.cs" />
+    <Compile Include="Workflow\Model\Configuration\EntityWorkflowConfiguration.StageChangeHistoryConfiguration.cs" />
+    <Compile Include="Workflow\Model\Configuration\EntityWorkflowConfiguration.StageInfo.cs" />
+    <Compile Include="Workflow\Model\Configuration\EntityWorkflowConfiguration.StageProvider.cs" />
+    <Compile Include="Workflow\Model\Configuration\EntityWorkflowConfiguration.SystemRole.cs" />
+    <Compile Include="Workflow\Model\Configuration\EntityWorkflowConfiguration.TransitionInfo.cs" />
+    <Compile Include="Workflow\Model\Configuration\EntityWorkflowConfiguration.TransitionProvider.cs" />
+    <Compile Include="Workflow\Model\Configuration\EntityWorkflowConfiguration.TypeRule.cs" />
+    <Compile Include="Workflow\Model\Configuration\EntityWorkflowConfiguration.Validators.cs" />
+    <Compile Include="Workflow\Model\Configuration\EntityWorkflowConfiguration.WorkflowProvider.cs" />
+    <Compile Include="Workflow\Model\Configuration\EntityWorkflowConfiguration.WorkflowRole.cs" />
+    <Compile Include="Workflow\Model\Configuration\IEntityWorkflowRole.cs" />
+    <Compile Include="Workflow\Model\Configuration\IEntityWorkflowStage.cs" />
+    <Compile Include="Workflow\Model\Configuration\IEntityWorkflowTransition.cs" />
+    <Compile Include="Workflow\Model\Configuration\IEntityWorkflowTypeRule.cs" />
+    <Compile Include="Workflow\Model\Configuration\IStageChangeHistoryConfiguration.cs" />
+    <Compile Include="Workflow\Model\EntityWorkflow.cs" />
+    <Compile Include="Workflow\Model\EntityWorkflowStage.cs" />
+    <Compile Include="Workflow\Model\EntityWorkflowStageChange.cs" />
+    <Compile Include="Workflow\Model\EntityWorkflowTransition.cs" />
+    <Compile Include="Workflow\Model\IEntityWorkflowProvider.cs" />
+    <Compile Include="Workflow\Model\IEntityWorkflowStageProvider.cs" />
+    <Compile Include="Workflow\Model\IEntityWorkflowTransitionProvider.cs" />
+    <Compile Include="Workflow\WorkflowCommand.cs" />
+    <Compile Include="Workflow\WorkflowSample.cs" />
+    <Compile Include="Workflow\WorkflowService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database\Readme.txt" />
+    <Content Include="T-SQL\func_GetActualFiles.sql" />
+    <Content Include="T-SQL\func_GetAllFileLatestVersions.sql" />
+    <Content Include="T-SQL\func_GetFileLatestVersions.sql" />
+    <Content Include="T-SQL\func_IsFileMapped.sql" />
+    <Content Include="Workflow\Readme.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
