@@ -1,14 +1,14 @@
 # CodeSamples
 Примеры кода
 
-Пример обёртки над ADO.NET для проекта без ORM
-https://github.com/Roman-NR/CodeSamples/tree/master/Database
+<p>Пример обёртки над ADO.NET для проекта без ORM<br />
+https://github.com/Roman-NR/CodeSamples/tree/master/Database</p>
 
-Планировщик заданий с собственным пулом потоков
-https://github.com/Roman-NR/CodeSamples/tree/master/TaskExecutor
+<p>Планировщик заданий с собственным пулом потоков<br />
+https://github.com/Roman-NR/CodeSamples/tree/master/TaskExecutor</p>
 
-Примеры функций для MS SQL Server
-https://github.com/Roman-NR/CodeSamples/tree/master/T-SQL
+<p>Примеры функций для MS SQL Server<br />
+https://github.com/Roman-NR/CodeSamples/tree/master/T-SQL</p>
 
-Пример объектной модели, позволяющей сконфигурировать workflow последовательность состояний (стадий) и переходов между ними для бизнес-объекта 
-https://github.com/Roman-NR/CodeSamples/tree/master/Workflow
+<p>Пример объектной модели, позволяющей сконфигурировать workflow последовательность состояний (стадий) и переходов между ними для бизнес-объекта<br />
+https://github.com/Roman-NR/CodeSamples/tree/master/Workflow</p>
